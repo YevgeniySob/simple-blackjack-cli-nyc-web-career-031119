@@ -53,10 +53,12 @@ end
 
 def runner
   temp = 0
+  sum = 0
   welcome
-  temp = initial_round
+  sum = initial_round
   while temp <= 21 do
-    temp += hit?
+    temp = hit?
+    sum += temp
     display_card_total(temp)
   end
   if temp > 21
