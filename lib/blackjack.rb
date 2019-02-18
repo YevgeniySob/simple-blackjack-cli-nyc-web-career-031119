@@ -30,7 +30,7 @@ def initial_round
   return sum
 end
 
-def hit?(num)
+def hit?(num = 0)
   prompt_user
   value = get_user_input
   temp = 0
@@ -55,6 +55,6 @@ def runner
   welcome
   initial_round
   hit?(4)
-  display_card_total
+  display_card_total()
 end
     
