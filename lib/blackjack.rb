@@ -58,10 +58,10 @@ def runner
   while temp <= 21 do
     temp = hit?
     sum += temp
-    display_card_total(temp)
+    display_card_total(sum)
   end
-  if temp > 21
-    end_game(temp)
+  if sum > 21
+    end_game(sum)
   end
 end
     
