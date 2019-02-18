@@ -59,5 +59,8 @@ def runner
     temp = hit?
     display_card_total(temp)
   end
+  if temp > 21
+    end_game
+  end
 end
     
