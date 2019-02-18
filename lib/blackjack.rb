@@ -52,9 +52,12 @@ end
 #####################################################
 
 def runner
+  temp = 0
   welcome
-  initial_round
-  hit?
-  display_card_total(30)
+  temp = initial_round
+  while temp <= 21 do
+    temp = hit?
+    display_card_total(temp)
+  end
 end
     
